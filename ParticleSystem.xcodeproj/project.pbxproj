@@ -1,0 +1,374 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		924C487D168814C90023D7A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924C487C168814C90023D7A6 /* UIKit.framework */; };
+		924C487F168814C90023D7A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924C487E168814C90023D7A6 /* Foundation.framework */; };
+		924C4881168814C90023D7A6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924C4880168814C90023D7A6 /* CoreGraphics.framework */; };
+		924C4883168814C90023D7A6 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924C4882168814C90023D7A6 /* GLKit.framework */; };
+		924C4885168814C90023D7A6 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924C4884168814C90023D7A6 /* OpenGLES.framework */; };
+		924C488B168814C90023D7A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 924C4889168814C90023D7A6 /* InfoPlist.strings */; };
+		924C488D168814CA0023D7A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 924C488C168814C90023D7A6 /* main.m */; };
+		924C4891168814CA0023D7A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 924C4890168814CA0023D7A6 /* AppDelegate.m */; };
+		924C4893168814CA0023D7A6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 924C4892168814CA0023D7A6 /* Default.png */; };
+		924C4895168814CA0023D7A6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 924C4894168814CA0023D7A6 /* Default@2x.png */; };
+		924C4897168814CA0023D7A6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 924C4896168814CA0023D7A6 /* Default-568h@2x.png */; };
+		924C4899168814CA0023D7A6 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 924C4898168814CA0023D7A6 /* Shader.fsh */; };
+		924C489B168814CA0023D7A6 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 924C489A168814CA0023D7A6 /* Shader.vsh */; };
+		924C489E168814CA0023D7A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 924C489D168814CA0023D7A6 /* ViewController.m */; };
+		924C48A1168814CA0023D7A6 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 924C489F168814CA0023D7A6 /* ViewController_iPhone.xib */; };
+		924C48A4168814CA0023D7A6 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 924C48A2168814CA0023D7A6 /* ViewController_iPad.xib */; };
+		924C48AD16881B840023D7A6 /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 924C48AB16881B840023D7A6 /* Particle.cpp */; };
+		924C48B016881B990023D7A6 /* ParticleEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 924C48AE16881B990023D7A6 /* ParticleEmitter.cpp */; };
+		929B3FFE168AC6F30075F319 /* OGLES2ParticleRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 929B3FFC168AC6F30075F319 /* OGLES2ParticleRenderer.cpp */; };
+		92DC32781689945D007B537E /* sprite.png in Resources */ = {isa = PBXBuildFile; fileRef = 92DC32771689945D007B537E /* sprite.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		924C4878168814C90023D7A6 /* ParticleSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParticleSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		924C487C168814C90023D7A6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		924C487E168814C90023D7A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		924C4880168814C90023D7A6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		924C4882168814C90023D7A6 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		924C4884168814C90023D7A6 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		924C4888168814C90023D7A6 /* ParticleSystem-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ParticleSystem-Info.plist"; sourceTree = "<group>"; };
+		924C488A168814C90023D7A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		924C488C168814C90023D7A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		924C488E168814CA0023D7A6 /* ParticleSystem-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ParticleSystem-Prefix.pch"; sourceTree = "<group>"; };
+		924C488F168814CA0023D7A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		924C4890168814CA0023D7A6 /* AppDelegate.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = AppDelegate.m; sourceTree = "<group>"; };
+		924C4892168814CA0023D7A6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		924C4894168814CA0023D7A6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		924C4896168814CA0023D7A6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		924C4898168814CA0023D7A6 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		924C489A168814CA0023D7A6 /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		924C489C168814CA0023D7A6 /* ViewController.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = ViewController.h; sourceTree = "<group>"; };
+		924C489D168814CA0023D7A6 /* ViewController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = ViewController.m; sourceTree = "<group>"; };
+		924C48A0168814CA0023D7A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		924C48A3168814CA0023D7A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		924C48AB16881B840023D7A6 /* Particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Particle.cpp; path = implementation/Particle.cpp; sourceTree = "<group>"; };
+		924C48AC16881B840023D7A6 /* Particle.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Particle.h; path = implementation/Particle.h; sourceTree = "<group>"; };
+		924C48AE16881B990023D7A6 /* ParticleEmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ParticleEmitter.cpp; path = implementation/ParticleEmitter.cpp; sourceTree = "<group>"; };
+		924C48AF16881B990023D7A6 /* ParticleEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParticleEmitter.h; path = implementation/ParticleEmitter.h; sourceTree = "<group>"; };
+		924C48B216881F050023D7A6 /* vec.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = vec.h; path = implementation/vec.h; sourceTree = "<group>"; };
+		924C48B51688344B0023D7A6 /* mutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mutils.h; path = implementation/mutils.h; sourceTree = "<group>"; };
+		929B3FFB168AADB90075F319 /* EmitterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EmitterState.h; path = implementation/EmitterState.h; sourceTree = "<group>"; };
+		929B3FFC168AC6F30075F319 /* OGLES2ParticleRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OGLES2ParticleRenderer.cpp; path = implementation/OGLES2ParticleRenderer.cpp; sourceTree = "<group>"; };
+		929B3FFD168AC6F30075F319 /* OGLES2ParticleRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OGLES2ParticleRenderer.h; path = implementation/OGLES2ParticleRenderer.h; sourceTree = "<group>"; };
+		929B3FFF168AC7A00075F319 /* ParticleRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ParticleRenderer.h; path = implementation/ParticleRenderer.h; sourceTree = "<group>"; };
+		92DC32771689945D007B537E /* sprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprite.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		924C4875168814C90023D7A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				924C487D168814C90023D7A6 /* UIKit.framework in Frameworks */,
+				924C487F168814C90023D7A6 /* Foundation.framework in Frameworks */,
+				924C4881168814C90023D7A6 /* CoreGraphics.framework in Frameworks */,
+				924C4883168814C90023D7A6 /* GLKit.framework in Frameworks */,
+				924C4885168814C90023D7A6 /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		924C486D168814C90023D7A6 = {
+			isa = PBXGroup;
+			children = (
+				924C4886168814C90023D7A6 /* ParticleSystem */,
+				924C487B168814C90023D7A6 /* Frameworks */,
+				924C4879168814C90023D7A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		924C4879168814C90023D7A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				924C4878168814C90023D7A6 /* ParticleSystem.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		924C487B168814C90023D7A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				924C487C168814C90023D7A6 /* UIKit.framework */,
+				924C487E168814C90023D7A6 /* Foundation.framework */,
+				924C4880168814C90023D7A6 /* CoreGraphics.framework */,
+				924C4882168814C90023D7A6 /* GLKit.framework */,
+				924C4884168814C90023D7A6 /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		924C4886168814C90023D7A6 /* ParticleSystem */ = {
+			isa = PBXGroup;
+			children = (
+				924C48AA16881B580023D7A6 /* Implementation */,
+				924C488F168814CA0023D7A6 /* AppDelegate.h */,
+				924C4890168814CA0023D7A6 /* AppDelegate.m */,
+				924C4898168814CA0023D7A6 /* Shader.fsh */,
+				924C489A168814CA0023D7A6 /* Shader.vsh */,
+				924C489C168814CA0023D7A6 /* ViewController.h */,
+				924C489D168814CA0023D7A6 /* ViewController.m */,
+				924C489F168814CA0023D7A6 /* ViewController_iPhone.xib */,
+				924C48A2168814CA0023D7A6 /* ViewController_iPad.xib */,
+				924C4887168814C90023D7A6 /* Supporting Files */,
+			);
+			path = ParticleSystem;
+			sourceTree = "<group>";
+		};
+		924C4887168814C90023D7A6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				92DC32771689945D007B537E /* sprite.png */,
+				924C4888168814C90023D7A6 /* ParticleSystem-Info.plist */,
+				924C4889168814C90023D7A6 /* InfoPlist.strings */,
+				924C488C168814C90023D7A6 /* main.m */,
+				924C488E168814CA0023D7A6 /* ParticleSystem-Prefix.pch */,
+				924C4892168814CA0023D7A6 /* Default.png */,
+				924C4894168814CA0023D7A6 /* Default@2x.png */,
+				924C4896168814CA0023D7A6 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		924C48AA16881B580023D7A6 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				924C48B4168833A60023D7A6 /* Math */,
+				924C48AB16881B840023D7A6 /* Particle.cpp */,
+				924C48AC16881B840023D7A6 /* Particle.h */,
+				924C48AE16881B990023D7A6 /* ParticleEmitter.cpp */,
+				924C48AF16881B990023D7A6 /* ParticleEmitter.h */,
+				929B3FFB168AADB90075F319 /* EmitterState.h */,
+				929B3FFC168AC6F30075F319 /* OGLES2ParticleRenderer.cpp */,
+				929B3FFD168AC6F30075F319 /* OGLES2ParticleRenderer.h */,
+				929B3FFF168AC7A00075F319 /* ParticleRenderer.h */,
+			);
+			name = Implementation;
+			sourceTree = "<group>";
+		};
+		924C48B4168833A60023D7A6 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				924C48B51688344B0023D7A6 /* mutils.h */,
+				924C48B216881F050023D7A6 /* vec.h */,
+			);
+			name = Math;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		924C4877168814C90023D7A6 /* ParticleSystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 924C48A7168814CA0023D7A6 /* Build configuration list for PBXNativeTarget "ParticleSystem" */;
+			buildPhases = (
+				924C4874168814C90023D7A6 /* Sources */,
+				924C4875168814C90023D7A6 /* Frameworks */,
+				924C4876168814C90023D7A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParticleSystem;
+			productName = ParticleSystem;
+			productReference = 924C4878168814C90023D7A6 /* ParticleSystem.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		924C486F168814C90023D7A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Denis Gladkov";
+			};
+			buildConfigurationList = 924C4872168814C90023D7A6 /* Build configuration list for PBXProject "ParticleSystem" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 924C486D168814C90023D7A6;
+			productRefGroup = 924C4879168814C90023D7A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				924C4877168814C90023D7A6 /* ParticleSystem */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		924C4876168814C90023D7A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				924C488B168814C90023D7A6 /* InfoPlist.strings in Resources */,
+				924C4893168814CA0023D7A6 /* Default.png in Resources */,
+				924C4895168814CA0023D7A6 /* Default@2x.png in Resources */,
+				924C4897168814CA0023D7A6 /* Default-568h@2x.png in Resources */,
+				924C4899168814CA0023D7A6 /* Shader.fsh in Resources */,
+				924C489B168814CA0023D7A6 /* Shader.vsh in Resources */,
+				924C48A1168814CA0023D7A6 /* ViewController_iPhone.xib in Resources */,
+				924C48A4168814CA0023D7A6 /* ViewController_iPad.xib in Resources */,
+				92DC32781689945D007B537E /* sprite.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		924C4874168814C90023D7A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				924C488D168814CA0023D7A6 /* main.m in Sources */,
+				924C4891168814CA0023D7A6 /* AppDelegate.m in Sources */,
+				924C489E168814CA0023D7A6 /* ViewController.m in Sources */,
+				924C48AD16881B840023D7A6 /* Particle.cpp in Sources */,
+				924C48B016881B990023D7A6 /* ParticleEmitter.cpp in Sources */,
+				929B3FFE168AC6F30075F319 /* OGLES2ParticleRenderer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		924C4889168814C90023D7A6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				924C488A168814C90023D7A6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		924C489F168814CA0023D7A6 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				924C48A0168814CA0023D7A6 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		924C48A2168814CA0023D7A6 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				924C48A3168814CA0023D7A6 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		924C48A5168814CA0023D7A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		924C48A6168814CA0023D7A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		924C48A8168814CA0023D7A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParticleSystem/ParticleSystem-Prefix.pch";
+				INFOPLIST_FILE = "ParticleSystem/ParticleSystem-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		924C48A9168814CA0023D7A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParticleSystem/ParticleSystem-Prefix.pch";
+				INFOPLIST_FILE = "ParticleSystem/ParticleSystem-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		924C4872168814C90023D7A6 /* Build configuration list for PBXProject "ParticleSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				924C48A5168814CA0023D7A6 /* Debug */,
+				924C48A6168814CA0023D7A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		924C48A7168814CA0023D7A6 /* Build configuration list for PBXNativeTarget "ParticleSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				924C48A8168814CA0023D7A6 /* Debug */,
+				924C48A9168814CA0023D7A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 924C486F168814C90023D7A6 /* Project object */;
+}
